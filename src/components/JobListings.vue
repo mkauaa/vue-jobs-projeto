@@ -34,7 +34,7 @@ onMounted(async () => {
     <section class="bg-blue-50 px-4 py-10">
         <div class="container-xl lg:container m-auto">
             <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
-                Browse Jobs
+                Navegar Vagas
             </h2>
             <div v-if="state.isLoading" class="text-center text-gray-500 py-6">
                 <PulseLoader />
@@ -50,7 +50,7 @@ onMounted(async () => {
       <RouterLink
         to="/jobs"
         class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-        >View All Jobs</RouterLink
+        >Ver Todas as Vagas</RouterLink
       >
     </section>
 </template>

@@ -68,14 +68,14 @@ onMounted(async () => {
 
             <div class="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 class="text-green-800 text-lg font-bold mb-6">
-                Job Description
+                Descrição da vaga
               </h3>
 
               <p class="mb-4">
                 {{ state.job.description }}
               </p>
 
-              <h3 class="text-green-800 text-lg font-bold mb-2">Salary</h3>
+              <h3 class="text-green-800 text-lg font-bold mb-2">Salário</h3>
 
               <p class="mb-4">{{ state.job.salary }}</p>
             </div>
@@ -85,7 +85,7 @@ onMounted(async () => {
           <aside>
             <!-- Company Info -->
             <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-bold mb-6">Company Info</h3>
+              <h3 class="text-xl font-bold mb-6">Informações da empresa</h3>
 
               <h2 class="text-2xl">{{ state.job.company.name }}</h2>
 
@@ -95,29 +95,29 @@ onMounted(async () => {
 
               <hr class="my-4" />
 
-              <h3 class="text-xl">Contact Email:</h3>
+              <h3 class="text-xl">Email para contato:</h3>
 
               <p class="my-2 bg-green-100 p-2 font-bold">
                 {{ state.job.company.contactEmail }}
               </p>
 
-              <h3 class="text-xl">Contact Phone:</h3>
+              <h3 class="text-xl">Telefone para contato:</h3>
 
               <p class="my-2 bg-green-100 p-2 font-bold"> {{ state.job.company.contactPhone }}</p>
             </div>
 
             <!-- Manage -->
             <div class="bg-white p-6 rounded-lg shadow-md mt-6">
-              <h3 class="text-xl font-bold mb-6">Manage Job</h3>
+              <h3 class="text-xl font-bold mb-6">Gerenciar vaga</h3>
               <RouterLink
                 :to="`/jobs/edit/${state.job.id}`"
                 class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-                >Edit Job</RouterLink
+                >Editar Vaga</RouterLink
               >
               <button @click="deleteJob"
                 class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
               >
-                Delete Job
+                Excluir Vaga
               </button>
             </div>
           </aside>

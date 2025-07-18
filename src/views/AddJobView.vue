@@ -56,11 +56,11 @@ try {
           class="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
         >
           <form @submit.prevent="handleSubmit">
-            <h2 class="text-3xl text-center font-semibold mb-6">Add Job</h2>
+            <h2 class="text-3xl text-center font-semibold mb-6">Adicionar Vaga</h2>
 
             <div class="mb-4">
               <label for="type" class="block text-gray-700 font-bold mb-2"
-                >Job Type</label
+                >Tipo de Vaga</label
               >
               <select
                 v-model="form.type"
@@ -69,16 +69,16 @@ try {
                 class="border rounded w-full py-2 px-3"
                 required
               >
-                <option value="Full-Time">Full-Time</option>
-                <option value="Part-Time">Part-Time</option>
-                <option value="Remote">Remote</option>
-                <option value="Internship">Internship</option>
+                <option value="Full-Time">Tempo Integral</option>
+                <option value="Part-Time">Meio Período</option>
+                <option value="Remote">Remoto</option>
+                <option value="Internship">Estágio</option>
               </select>
             </div>
 
             <div class="mb-4">
               <label class="block text-gray-700 font-bold mb-2"
-                >Job Listing Name</label
+                >Nome da Vaga</label
               >
               <input
                 v-model="form.title"
@@ -86,7 +86,7 @@ try {
                 id="name"
                 name="name"
                 class="border rounded w-full py-2 px-3 mb-2"
-                placeholder="eg. Beautiful Apartment In Miami"
+                placeholder="Ex: Desenvolvedor Front-end Sênior"
                 required
               />
             </div>
@@ -94,7 +94,7 @@ try {
               <label
                 for="description"
                 class="block text-gray-700 font-bold mb-2"
-                >Description</label
+                >Descrição da Vaga</label
               >
               <textarea
                 v-model="form.description"
@@ -102,13 +102,13 @@ try {
                 name="description"
                 class="border rounded w-full py-2 px-3"
                 rows="4"
-                placeholder="Add any job duties, expectations, requirements, etc"
+                placeholder="Adicione deveres, expectativas, requisitos, etc."
               ></textarea>
             </div>
 
             <div class="mb-4">
               <label for="type" class="block text-gray-700 font-bold mb-2"
-                >Salary</label
+                >Salário</label
               >
               <select
                 v-model="form.salary"
@@ -117,23 +117,23 @@ try {
                 class="border rounded w-full py-2 px-3"
                 required
               >
-                <option value="Under $50K">under $50K</option>
-                <option value="$50K - $60K">$50 - $60K</option>
-                <option value="$60K - $70K">$60 - $70K</option>
-                <option value="$70K - $80K">$70 - $80K</option>
-                <option value="$80K - $90K">$80 - $90K</option>
-                <option value="$90K - $100K">$90 - $100K</option>
-                <option value="$100K - $125K">$100 - $125K</option>
-                <option value="$125K - $150K">$125 - $150K</option>
-                <option value="$150K - $175K">$150 - $175K</option>
-                <option value="$175K - $200K">$175 - $200K</option>
-                <option value="Over $200K">Over $200K</option>
+                <option value="Under $50K">Até R$ 5.000 </option>
+                <option value="$50K - $60K">R$ 5.000 - R$ 8.000 </option>
+                <option value="$60K - $70K">R$ 8.000 - R$ 12.000 </option>
+                <option value="$70K - $80K">R$ 12.000 - R$ 15.000 </option>
+                <option value="$80K - $90K">R$ 15.000 - R$ 18.000 </option>
+                <option value="$90K - $100K">R$ 18.000 - R$ 22.000 </option>
+                <option value="$100K - $125K">R$ 22.000 - R$ 28.000 </option>
+                <option value="$125K - $150K">R$ 28.000 - R$ 35.000 </option>
+                <option value="$150K - $175K">R$ 35.000 - R$ 45.000 </option>
+                <option value="$175K - $200K">R$ 45.000 - R$ 55.000 </option>
+                <option value="Over $200K">Acima de R$ 55.000 </option>
               </select>
             </div>
 
             <div class="mb-4">
               <label class="block text-gray-700 font-bold mb-2">
-                Location
+                Localização
               </label>
               <input
                 v-model="form.location"
@@ -141,16 +141,16 @@ try {
                 id="location"
                 name="location"
                 class="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Company Location"
+                placeholder="Localização da Empresa"
                 required
               />
             </div>
 
-            <h3 class="text-2xl mb-5">Company Info</h3>
+            <h3 class="text-2xl mb-5">Informações da Empresa</h3>
 
             <div class="mb-4">
               <label for="company" class="block text-gray-700 font-bold mb-2"
-                >Company Name</label
+                >Nome da Empresa</label
               >
               <input
                 v-model="form.company.name"
@@ -158,7 +158,7 @@ try {
                 id="company"
                 name="company"
                 class="border rounded w-full py-2 px-3"
-                placeholder="Company Name"
+                placeholder="Nome da Empresa"
               />
             </div>
 
@@ -166,7 +166,7 @@ try {
               <label
                 for="company_description"
                 class="block text-gray-700 font-bold mb-2"
-                >Company Description</label
+                >Descrição da Empresa</label
               >
               <textarea
                 v-model="form.company.description"
@@ -174,7 +174,7 @@ try {
                 name="company_description"
                 class="border rounded w-full py-2 px-3"
                 rows="4"
-                placeholder="What does your company do?"
+                placeholder="O que sua empresa faz?"
               ></textarea>
             </div>
 
@@ -182,7 +182,7 @@ try {
               <label
                 for="contact_email"
                 class="block text-gray-700 font-bold mb-2"
-                >Contact Email</label
+                >Email de Contato</label
               >
               <input
                 v-model="form.company.contactEmail"
@@ -190,7 +190,7 @@ try {
                 id="contact_email"
                 name="contact_email"
                 class="border rounded w-full py-2 px-3"
-                placeholder="Email address for applicants"
+                placeholder="Endereço de email para candidatos"
                 required
               />
             </div>
@@ -198,7 +198,7 @@ try {
               <label
                 for="contact_phone"
                 class="block text-gray-700 font-bold mb-2"
-                >Contact Phone</label
+                >Telefone de Contato</label
               >
               <input
                 v-model="form.company.contactPhone"
@@ -206,7 +206,7 @@ try {
                 id="contact_phone"
                 name="contact_phone"
                 class="border rounded w-full py-2 px-3"
-                placeholder="Optional phone for applicants"
+                placeholder="Telefone opcional para candidatos"
               />
             </div>
 
@@ -215,7 +215,7 @@ try {
                 class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Add Job
+                Adicionar Vaga
               </button>
             </div>
           </form>

@@ -41,7 +41,7 @@ const truncatedDescription = computed(() => {
               </div>
               
 
-              <h3 class="text-green-500 mb-2">{{ job.salary }} / Year</h3>
+              <h3 class="text-green-500 mb-2">{{ job.salary }} / Ano</h3>
 
               <div class="border border-gray-100 mb-5"></div>
 
@@ -52,7 +52,7 @@ const truncatedDescription = computed(() => {
                 </div>
                 <RouterLink :to="'jobs/' + job.id"
                   class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
-                  Read More
+                  Ver mais
                 </RouterLink>
               </div>
             </div>

@@ -20,7 +20,7 @@
             <RouterLink class="flex flex-shrink-0 items-center mr-4" to="/">
               <img class="h-10 w-auto" :src="logo" alt="Vue Jobs" />
               <span class="hidden md:block text-white text-2xl font-bold ml-2"
-                >Vue Jobs</span
+                >Vagas Vue</span
               >
             </RouterLink>
             <div class="md:ml-auto">
@@ -35,7 +35,7 @@
                   'px-3',
                   'py-2'
                   ]"
-                  >Home</RouterLink
+                  >Início</RouterLink
                 >
                 <RouterLink
                   to="/jobs"
@@ -47,7 +47,7 @@
                   'px-3',
                   'py-2'
                   ]"
-                  >Jobs</RouterLink
+                  >Vagas</RouterLink
                 >
                 <RouterLink
                   to="/jobs/add"
@@ -59,7 +59,7 @@
                   'px-3',
                   'py-2'
                   ]"
-                  >Add Job</RouterLink
+                  >Adicionar Vaga</RouterLink
                 >
               </div>
             </div>
